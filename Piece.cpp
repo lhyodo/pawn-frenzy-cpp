@@ -24,10 +24,9 @@ class Piece {
     bool isKilled() {
         return killed;
     }
-    bool setKilled(bool k) {
+    void setKilled(bool k) {
         killed = k;
     }
-    //virtual bool canMove(Board board, Spot start, Spot end) = 0;
 };
 
 class Pawn : public Piece {
@@ -41,8 +40,6 @@ class Pawn : public Piece {
         setWhite(wh);
         setKilled(false);
     }
-    // bool canMove(Board board, Spot start, Spot end) {
-    // }
 };
 
 #endif
