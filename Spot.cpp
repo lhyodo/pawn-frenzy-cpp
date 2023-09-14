@@ -1,4 +1,8 @@
-#include "Piece.cpp";
+#ifndef SPOT
+#define SPOT
+
+#include <stdio.h>
+#include "Piece.cpp"
 
 class Spot {
    private:
@@ -26,13 +30,15 @@ class Spot {
     int getX() {
         return x;
     }
-    int setX(int xCord) {
+    void setX(int xCord) {
         x = xCord;
     }
     int getY() {
         return y;
     }
-    int setY(int yCord) {
+    void setY(int yCord) {
         y = yCord;
     }
 };
+
+#endif

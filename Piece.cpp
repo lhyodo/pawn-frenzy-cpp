@@ -1,9 +1,6 @@
 #ifndef PIECE
 #define PIECE
 
-#include "Board.cpp"
-#include "Spot.cpp"
-
 class Piece {
    private:
     bool white{};
@@ -30,7 +27,7 @@ class Piece {
     bool setKilled(bool k) {
         killed = k;
     }
-    virtual bool canMove(Board board, Spot start, Spot end) = 0;
+    //virtual bool canMove(Board board, Spot start, Spot end) = 0;
 };
 
 class Pawn : public Piece {
@@ -44,8 +41,8 @@ class Pawn : public Piece {
         setWhite(wh);
         setKilled(false);
     }
-    bool canMove(Board board, Spot start, Spot end) {
-    }
+    // bool canMove(Board board, Spot start, Spot end) {
+    // }
 };
 
 #endif
